@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, SetStateAction, Key, useCallback } from "react";
 import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface CarouselItem {
   path: string;
@@ -33,10 +32,17 @@ const Carousel = ({ carouselData }: CarouselProps) => {
   return (
     <div className="relative w-full overflow-x-hidden">
       <div className="carousel-container">
-        <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        <div className="carousel flex" style={{ transform: `translateX(-${currentSlide * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
           {carouselData.map((item: CarouselItem, i: Key | null | undefined) => (
             <a key={i} className="carousel-item" href={item.path}>
-              <Image src={item.image} alt={`carousel image ${i}`} />
+              <Image 
+                src={item.image} 
+                alt={`carousel image ${i}`}
+                width={800} // Specify the width
+                height={400} // Specify the height
+                layout="responsive" // Adjust layout as needed
+                objectFit="cover" // Optionally maintain aspect ratio
+              />
             </a>
           ))}
         </div>
