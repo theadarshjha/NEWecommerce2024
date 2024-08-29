@@ -3,6 +3,7 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/re
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { Product } from '@/types/product';
 import { useCart } from "@/components/contexts/CartContext"
+import Image from 'next/image';
 
 interface QuickAddToCartProps {
   isOpen: boolean;
@@ -49,7 +50,7 @@ const QuickAddToCart: React.FC<QuickAddToCartProps> = ({ isOpen, onClose }) => {
                         {cart.map((product) => (
                           <li key={product.id} className="flex py-6">
                             <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                              <img
+                              <Image
                                 alt={product.imageAlt || 'Product image'}
                                 src={product.image}
                                 className="h-full w-full object-cover object-center"

@@ -36,7 +36,7 @@ const Carousel = ({ carouselData }: CarouselProps) => {
         <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {carouselData.map((item: CarouselItem, i: Key | null | undefined) => (
             <a key={i} className="carousel-item" href={item.path}>
-              <img src={item.image} alt={`carousel image ${i}`} />
+              <Image src={item.image} alt={`carousel image ${i}`} />
             </a>
           ))}
         </div>
