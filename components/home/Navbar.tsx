@@ -8,7 +8,7 @@ import { NavbarData } from "@/data/navbar";
 import { signInSignOut } from "@/data/navbar";
 import { MagnifyingGlassIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation"; // Updated import
-import { useCart } from "./contexts/CartContext";
+import { useCart } from "../contexts/CartContext";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
