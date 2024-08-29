@@ -1,7 +1,7 @@
 export const NavbarData = [
   {
     name: "Thar",
-    link: "/",
+    link: "/app/thar_accessories/page.tsx",
   },
   {
     name: "Men",
