@@ -16,8 +16,10 @@ const TharAccessories = () => {
     <div className='p-0 font-sf-pro-icons m-0'>
       <Head>
         <title>Thar Accessories</title>
+        
         <meta name="description" content="Explore our range of Thar accessories to enhance your vehicle's performance and style." />
       </Head>
+      <h1>hhh</h1>
       <TharBanner />
 
      
