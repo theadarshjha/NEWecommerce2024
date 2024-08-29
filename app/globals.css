@@ -2,28 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'sf-pro-text', sans-serif;
+* {
+  font-family: "sf-pro-text", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'sf-pro-text';
+  font-family: "sf-pro-text";
   font-style: normal;
-  font-weight:  400;
-  src: url(/font/SFPRODISPLAYREGULAR.OTF) format('opentype');
+  font-weight: 400;
+  src: url(/font/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
 @font-face {
-  font-family: 'sf-pro-text';
+  font-family: "sf-pro-text";
   font-style: normal;
-  font-weight:500;
-  src: url(/font/SFPRODISPLAYMEDIUM.OTF) format('opentype');
+  font-weight: 500;
+  src: url(/font/SFPRODISPLAYMEDIUM.OTF) format("opentype");
 }
 @font-face {
-  font-family: 'sf-pro-text';
+  font-family: "sf-pro-text";
   font-style: normal;
-  font-weight:  700;
-  src: url(/public//font/SFPRODISPLAYBOLD.OTF) format('opentype');
+  font-weight: 700;
+  src: url(/public//font/SFPRODISPLAYBOLD.OTF) format("opentype");
 }
