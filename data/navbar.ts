@@ -1,20 +1,20 @@
 export const NavbarData = [
   {
     name: "Thar",
-    link: "/app/thar_accessories",
+    link: "/4x4/thar-accessories",
   },
   {
-    name: "Men",
-    link: "/",
+    name: "Hilux",
+    link: "/4x4/hilux-accessories",
   },
 
   {
-    name: "Company",
-    link: "/",
+    name: "Jimny",
+    link: "/4x4/jimny-accessories",
   },
   {
-    name: "Stores",
-    link: "/",
+    name: "Isuzu",
+    link: "/4x4/isuzu-accessories",
   },
 ];
 

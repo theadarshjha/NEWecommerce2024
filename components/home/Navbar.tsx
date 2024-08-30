@@ -23,7 +23,9 @@ export const Navbar = () => {
     <nav className="px-20">
       <section className="flex justify-between items-center w-full py-4">
         <section className="flex space-x-9 items-center">
-          <Image className="h-6 w-[150px]" src={asset.logo} alt="logo" />
+        <Link href="/" passHref>
+          <Image className="h-6 w-[150px]"  src={asset.logo} alt="logo" />
+          </Link>
           <div className="flex gap-x-8">
             {NavbarData.map((item, idx) => (
               <div key={idx}>

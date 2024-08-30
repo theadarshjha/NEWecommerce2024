@@ -1,11 +1,12 @@
+
 "use client";
 
 
-import TharBanner from '@/components/THAR/TharBanner';
+import HiluxBanner from '@/components/4by4/Hilux/HiluxBanner';
 import Head from 'next/head';
 
 
-const TharAccessories = () => {
+const HiluxAccessories = () => {
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Thar', href: '/thar' },
@@ -16,11 +17,9 @@ const TharAccessories = () => {
     <div className='p-0 font-sf-pro-icons m-0'>
       <Head>
         <title>Thar Accessories</title>
-        
         <meta name="description" content="Explore our range of Thar accessories to enhance your vehicle's performance and style." />
       </Head>
-      <h1>hhh</h1>
-      <TharBanner />
+      <HiluxBanner/>
 
      
 
@@ -33,4 +32,4 @@ const TharAccessories = () => {
   );
 };
 
-export default TharAccessories;
+export default HiluxAccessories;
