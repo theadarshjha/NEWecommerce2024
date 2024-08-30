@@ -1,12 +1,10 @@
-import Carousel from "@/components/home/carousel";
-import { Navbar } from "@/components/home/Navbar";
-import homeCarouselData from "@/data/homecarouseldata";
-import Image from "next/image";
+import Carousel from '@/components/home/carousel';
+import homeCarouselData from '@/data/homecarouseldata';
 
 export default function Home() {
   return (
-    <main className="">
-    <Carousel carouselData={homeCarouselData}/>
+    <main className=''>
+      <Carousel carouselData={homeCarouselData} />
     </main>
   );
 }

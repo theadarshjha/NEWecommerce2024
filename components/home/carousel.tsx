@@ -1,7 +1,6 @@
-"use client";
-import { useState, useEffect, SetStateAction, Key, useCallback } from "react";
-import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+'use client';
+import { useState, useEffect, SetStateAction, Key, useCallback } from 'react';
+import Image from 'next/image';
 
 interface CarouselItem {
   path: string;
@@ -31,19 +30,19 @@ const Carousel = ({ carouselData }: CarouselProps) => {
   };
 
   return (
-    <div className="relative w-full overflow-x-hidden">
-      <div className="carousel-container">
-        <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+    <div className='relative w-full overflow-x-hidden'>
+      <div className='carousel-container'>
+        <div className='carousel' style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {carouselData.map((item: CarouselItem, i: Key | null | undefined) => (
-            <a key={i} className="carousel-item" href={item.path}>
-              <img src={item.image} alt={`carousel image ${i}`} />
+            <a key={i} className='carousel-item' href={item.path}>
+              <Image src={item.image} alt={`carousel image ${i}`} />
             </a>
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+      <div className='absolute bottom-0 left-0 right-0 flex justify-center mb-4'>
         {carouselData.map((_: any, i: number) => (
-          <button key={i} className={`w-2 h-2 rounded-full mx-1 ${i === currentSlide ? "bg-blue-500" : "bg-gray-300"}`} onClick={() => goToSlide(i)}></button>
+          <button key={i} className={`w-2 h-2 rounded-full mx-1 ${i === currentSlide ? 'bg-blue-500' : 'bg-gray-300'}`} onClick={() => goToSlide(i)}></button>
         ))}
       </div>
     </div>
